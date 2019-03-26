@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIClient.BatchSearchForIHIAsync", "HIClient.BatchSearchForIHIAsync\HIClient.BatchSearchForIHIAsync.csproj", "{B67C3A26-1AA8-40D4-A53A-C1148EE9414B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIClient.BatchSearchForIHISync", "HIClient.BatchSearchForIHISync\HIClient.BatchSearchForIHISync.csproj", "{D2015EF0-A0D6-4E9C-ABFF-29B9B82AA9B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIClient.CreateVerifiedIHI", "HIClient.CreateVerifiedIHI\HIClient.CreateVerifiedIHI.csproj", "{38F6990D-9E9F-4479-B537-0AB35FFD766F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIClient.BatchSearchForHPIIAsyn", "HIClient.BatchSearchForHPIIAsyn\HIClient.BatchSearchForHPIIAsyn.csproj", "{671AA585-DADD-47E3-B825-00DC672DCDC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIClient.BatchSearchForHPIOAsyn", "HIClient.BatchSearchForHPIOAsyn\HIClient.BatchSearchForHPIOAsyn.csproj", "{31905376-BCD1-4E61-A672-C79897D9F418}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIClient.SearchForHPDIndividual", "HIClient.SearchForHPDIndividual\HIClient.SearchForHPDIndividual.csproj", "{FDBF76C5-18DD-4DF3-8753-E4C63F775C77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIClient.SearchForHPDOrganisation", "HIClient.SearchForHPDOrganisation\HIClient.SearchForHPDOrganisation.csproj", "{634B5339-D7B2-4FBE-BE81-BB186E886F61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIClient.SearchForHPIISync", "HIClient.SearchForHPIISync\HIClient.SearchForHPIISync.csproj", "{2B296108-BCE1-4DF9-884C-91D511DE27B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIClient.SearchForIHISync", "HIClient.SearchForIHISync\HIClient.SearchForIHISync.csproj", "{D3AFBD44-6131-4BF4-9D02-3C48F339192F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIClient.SearchForHPIOSync", "HIClient.SearchForHPIOSync\HIClient.SearchForHPIOSync.csproj", "{117A2AE9-2252-48A0-AF83-8C60F46F0668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIClient.ReadReferenceDataSync", "HIClient.ReadReferenceDataSync\HIClient.ReadReferenceDataSync.csproj", "{FD9141A4-859F-47A7-9213-8BD81A43129D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B67C3A26-1AA8-40D4-A53A-C1148EE9414B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B67C3A26-1AA8-40D4-A53A-C1148EE9414B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B67C3A26-1AA8-40D4-A53A-C1148EE9414B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B67C3A26-1AA8-40D4-A53A-C1148EE9414B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2015EF0-A0D6-4E9C-ABFF-29B9B82AA9B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2015EF0-A0D6-4E9C-ABFF-29B9B82AA9B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2015EF0-A0D6-4E9C-ABFF-29B9B82AA9B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2015EF0-A0D6-4E9C-ABFF-29B9B82AA9B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38F6990D-9E9F-4479-B537-0AB35FFD766F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F6990D-9E9F-4479-B537-0AB35FFD766F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F6990D-9E9F-4479-B537-0AB35FFD766F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F6990D-9E9F-4479-B537-0AB35FFD766F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671AA585-DADD-47E3-B825-00DC672DCDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671AA585-DADD-47E3-B825-00DC672DCDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671AA585-DADD-47E3-B825-00DC672DCDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671AA585-DADD-47E3-B825-00DC672DCDC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31905376-BCD1-4E61-A672-C79897D9F418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31905376-BCD1-4E61-A672-C79897D9F418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31905376-BCD1-4E61-A672-C79897D9F418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31905376-BCD1-4E61-A672-C79897D9F418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDBF76C5-18DD-4DF3-8753-E4C63F775C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDBF76C5-18DD-4DF3-8753-E4C63F775C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDBF76C5-18DD-4DF3-8753-E4C63F775C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDBF76C5-18DD-4DF3-8753-E4C63F775C77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634B5339-D7B2-4FBE-BE81-BB186E886F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634B5339-D7B2-4FBE-BE81-BB186E886F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634B5339-D7B2-4FBE-BE81-BB186E886F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634B5339-D7B2-4FBE-BE81-BB186E886F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B296108-BCE1-4DF9-884C-91D511DE27B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B296108-BCE1-4DF9-884C-91D511DE27B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B296108-BCE1-4DF9-884C-91D511DE27B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B296108-BCE1-4DF9-884C-91D511DE27B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3AFBD44-6131-4BF4-9D02-3C48F339192F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3AFBD44-6131-4BF4-9D02-3C48F339192F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3AFBD44-6131-4BF4-9D02-3C48F339192F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3AFBD44-6131-4BF4-9D02-3C48F339192F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117A2AE9-2252-48A0-AF83-8C60F46F0668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117A2AE9-2252-48A0-AF83-8C60F46F0668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117A2AE9-2252-48A0-AF83-8C60F46F0668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117A2AE9-2252-48A0-AF83-8C60F46F0668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD9141A4-859F-47A7-9213-8BD81A43129D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9141A4-859F-47A7-9213-8BD81A43129D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9141A4-859F-47A7-9213-8BD81A43129D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9141A4-859F-47A7-9213-8BD81A43129D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F5798ED-FBA4-4586-94EF-E192B16E7E02}
+	EndGlobalSection
+EndGlobal
