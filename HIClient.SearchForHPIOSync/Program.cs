@@ -46,7 +46,7 @@ namespace HIClient.SearchForHPIOSync
 
       // Obtain the HI Service certificate by serial number from the windows local machine certificate personal store 
       System.Security.Cryptography.X509Certificates.X509Certificate2 tlsCert = Nehta.VendorLibrary.Common.X509CertificateUtil.GetCertificate(
-          "0608d9",
+          "06fba6",
           System.Security.Cryptography.X509Certificates.X509FindType.FindBySerialNumber,
           System.Security.Cryptography.X509Certificates.StoreName.My,
           System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine,
@@ -74,7 +74,8 @@ namespace HIClient.SearchForHPIOSync
       // Create the search request 
       var request = new nehta.mcaR50.ProviderSearchForProviderOrganisation.searchForProviderOrganisation()
       {
-        hpioNumber = Nehta.VendorLibrary.Common.HIQualifiers.HPIOQualifier + "8003628233350246"
+        //hpioNumber = Nehta.VendorLibrary.Common.HIQualifiers.HPIOQualifier + "8003628233350246"
+        hpioNumber = Nehta.VendorLibrary.Common.HIQualifiers.HPIOQualifier + "8003629900019338"
       };
       Console.WriteLine($"Submitting request for HPI-O: {request.hpioNumber}");
       try
@@ -93,8 +94,21 @@ namespace HIClient.SearchForHPIOSync
         Console.WriteLine("==================================================================");
         Console.WriteLine("=== HI Service Search Results ====================================");
         Console.WriteLine("==================================================================");
-        Console.WriteLine($"Family name: {response.searchForProviderOrganisationResult.hpioNumber}");        
+        Console.WriteLine($"HPI-O NUmber: {response.searchForProviderOrganisationResult.hpioNumber}");        
         Console.WriteLine($"HPI-O Status: {response.searchForProviderOrganisationResult.status}");
+        if (response.searchForProviderOrganisationResult.serviceMessages != null)
+        {
+          Console.WriteLine($"ServiceMessage HighestSeverity: {response.searchForProviderOrganisationResult.serviceMessages.highestSeverity.ToString()}");
+          Console.WriteLine("    ==== ServiceMessage List ===============================================");
+          foreach (var Msg in response.searchForProviderOrganisationResult.serviceMessages.serviceMessage)
+          {
+            Console.WriteLine($"    Message Code: {Msg.code}");
+            Console.WriteLine($"    Message Details: {Msg.details}");
+            Console.WriteLine($"    Message Reason: {Msg.reason}");
+            Console.WriteLine($"    Message severity: {Msg.severity.ToString()}");            
+            Console.WriteLine("    ==================================================================");
+          }
+        }
         Console.WriteLine("==================================================================");
         Console.WriteLine("Hit any key to end.");
         Console.ReadKey();        
